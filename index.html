@@ -21,6 +21,7 @@
             --fallback-bg-2: rgba(15, 17, 23, 0.4);
             --thumb-bg: #11131a;
             --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35), 0 1px 8px rgba(0, 0, 0, 0.2);
+            --image-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 6px rgba(0, 0, 0, 0.2);
         }
 
         [data-theme="light"] {
@@ -36,6 +37,7 @@
             --fallback-bg-2: rgba(203, 213, 225, 0.4);
             --thumb-bg: #e5e7eb;
             --box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12), 0 1px 6px rgba(0, 0, 0, 0.08);
+            --image-shadow: 0 8px 24px rgba(0, 0, 0, 0.15), 0 2px 6px rgba(0, 0, 0, 0.08);
         }
 
         * {
@@ -181,7 +183,6 @@
             text-align: center;
             padding: 0 1rem;
             background: transparent;
-            border-bottom: 1px solid var(--border);
         }
 
         header h1 {
@@ -284,7 +285,7 @@
             line-height: 1.7;
         }
 
-        /* CARD SLIDESHOW STYLES */
+        /* CARD SLIDESHOW STYLES WITH SHADOW */
         .card-slideshow {
             position: relative;
             width: 100%;
@@ -294,6 +295,7 @@
             background: var(--thumb-bg);
             border: 1px solid var(--border);
             aspect-ratio: 1 / 1;
+            box-shadow: var(--image-shadow);
         }
 
         .card-slide {
@@ -523,27 +525,27 @@
                     <a href="https://www.aaronmlittlemusic.com" target="_blank" class="card-btn">Visit Music Site</a>
                 </div>
 
-                <!-- MINISTRY AT BRIDGE CARD WITH GUITAR/WORSHIP SLIDESHOW (01.jpg - 10.jpg) -->
+                <!-- MINISTRY AT BRIDGE CARD WITH GUITAR/WORSHIP SLIDESHOW -->
                 <div class="feature-card">
                     <div>
                         <h3>Ministry at Bridge</h3>
 
                         <div class="card-slideshow" id="bridgeSlideshow">
-                            <img src="01.jpg" alt="Bridge Worship 1" class="card-slide active" data-caption="Worship at Bridge Church (01)">
-                            <img src="02.jpg" alt="Bridge Worship 2" class="card-slide" data-caption="Worship at Bridge Church (02)">
-                            <img src="03.jpg" alt="Bridge Worship 3" class="card-slide" data-caption="Worship at Bridge Church (03)">
-                            <img src="04.jpg" alt="Bridge Worship 4" class="card-slide" data-caption="Worship at Bridge Church (04)">
-                            <img src="05.jpg" alt="Bridge Worship 5" class="card-slide" data-caption="Worship at Bridge Church (05)">
-                            <img src="06.jpg" alt="Bridge Worship 6" class="card-slide" data-caption="Worship at Bridge Church (06)">
-                            <img src="07.jpg" alt="Bridge Worship 7" class="card-slide" data-caption="Worship at Bridge Church (07)">
-                            <img src="08.jpg" alt="Bridge Worship 8" class="card-slide" data-caption="Worship at Bridge Church (08)">
-                            <img src="09.jpg" alt="Bridge Worship 9" class="card-slide" data-caption="Worship at Bridge Church (09)">
-                            <img src="10.jpg" alt="Bridge Worship 10" class="card-slide" data-caption="Worship at Bridge Church (10)">
+                            <img src="01.jpg" alt="Bridge Worship 1" class="card-slide active" data-caption="Worship at Bridge Church">
+                            <img src="02.jpg" alt="Bridge Worship 2" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="03.jpg" alt="Bridge Worship 3" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="04.jpg" alt="Bridge Worship 4" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="05.jpg" alt="Bridge Worship 5" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="06.jpg" alt="Bridge Worship 6" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="07.jpg" alt="Bridge Worship 7" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="08.jpg" alt="Bridge Worship 8" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="09.jpg" alt="Bridge Worship 9" class="card-slide" data-caption="Worship at Bridge Church">
+                            <img src="10.jpg" alt="Bridge Worship 10" class="card-slide" data-caption="Worship at Bridge Church">
                             
                             <button class="slide-btn slide-prev" onclick="moveSlide('bridgeSlideshow', -1)" aria-label="Previous">&#10094;</button>
                             <button class="slide-btn slide-next" onclick="moveSlide('bridgeSlideshow', 1)" aria-label="Next">&#10095;</button>
                         </div>
-                        <div class="slide-caption-small" id="bridgeSlideshow-caption">Worship at Bridge Church (01)</div>
+                        <div class="slide-caption-small" id="bridgeSlideshow-caption">Worship at Bridge Church</div>
 
                         <p>Most Sundays Aaron is on guitar, leading worship with the team at Bridge Church Greenbrier in Chesapeake, Virginia. He also leads a <a href="https://bridgechurchva.churchcenter.com/groups/gb-campus/bridge-builders-men-s-group" target="_blank">weekly men’s Bible study</a> there on Fridays.</p>
                     </div>
